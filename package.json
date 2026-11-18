@@ -28,7 +28,7 @@
     "start:demo": "npm run build && npm start"
   },
   "devDependencies": {
-    "@playwright/test": "^1.64.1",
+    "@playwright/test": "^1.65.1",
     "playwright": "^1.64.1"
   }
 }
