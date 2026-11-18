@@ -6,6 +6,12 @@ Feature 5 lets a host shortlist 2–8 products, share a room link or six-charact
 
 This release preserves React 19 + Vite, Node.js + Express 5, Socket.IO, and SQLite. It implements the core social loop and the quick wins in sections 1–2 of the feature-ideas PDF. It does not implement the other teams' Features 1 and 2.
 
+## Quick review
+
+- Begin with [the latest tab/room report](docs/TAB_ROOM_FIXES_REPORT.md) and [the feature-status index](docs/FEATURE_STATUS.md); older party/QR descriptions elsewhere are historical and may not describe the current interface.
+- Trace HTTP and room permissions through [backend/src/routes/](backend/src/routes/) and authoritative persistence through [backend/src/store/](backend/src/store/). Review [the backend tests](backend/tests/) alongside those boundaries.
+- Follow the [professor demo](docs/DEMO_PROFESSOR.md) or [technical demo](docs/DEMO_TECH.md). This is a single-instance prototype; a display name is not a verified identity and historical load results are not a production-capacity guarantee.
+
 ## Start locally
 
 On Windows, double-click `Start-Vyumi.cmd`. It checks Node, installs missing dependencies, builds a missing frontend, and keeps startup errors visible. If the server is already running it opens the app. Otherwise, keep the launcher window open and visit http://localhost:3001 after the server reports it is running.
