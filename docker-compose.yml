@@ -1,0 +1,36 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vyumi-shop-with-me
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - DATABASE_PATH=data/shop-with-me.sqlite
+      - FRONTEND_URL=http://localhost:3001
+      - LOG_LEVEL=info
+      - REDIS_URL=${REDIS_URL:-}
+      - OLLAMA_URL=${OLLAMA_URL:-}
+    volumes:
+      - app-data:/app/backend/data
+      - app-uploads:/app/backend/uploads
+
+  redis:
+    image: redis:7-alpine
+    container_name: vyumi-redis
+    restart: unless-stopped
+    profiles:
+      - redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+volumes:
+  app-data:
+  app-uploads:
+  redis-data:

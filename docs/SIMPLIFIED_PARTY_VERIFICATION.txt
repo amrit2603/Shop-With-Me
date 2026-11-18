@@ -1,0 +1,31 @@
+November 3, 2026 — observed verification
+
+npm run test:backend: 20 files / 234 passed (40.54s)
+npm run test:frontend: 9 files / 43 passed (6.21s after final hook change)
+npm run lint --prefix frontend: clean after final change
+npm run build: 107 modules / 299ms after final change
+  CSS107.98kB gzip19.11kB; JS400.83kB gzip123.39kB
+npm run test:e2e: 14 passed / 1.6min after invited-screen refinement
+npx playwright test --config=playwright.config.mjs live-party.spec.js tab-room-fixes.spec.js:
+  2 passed /59.5s after final independent-gallery fix
+npm run smoke: SMOKE PASS (identity, rooms, guests, voting, comments, chat,
+  synchronized party, host transfer, end/public result)
+impeccable detect --json frontend/src: [] after final UI changes
+git diff --check: clean
+
+Executable coverage: retained link/code to name to live room, direct product link,
+per-tab names/logout/private saved links, comment persistence/live sync, native
+share payload/cancel/fallback/real clipboard readback, separated desktop actions,
+compact cards expandable to complete data, bounded votes list, centered leave
+menu, mobile name/button visible/no horizontal overflow, 4-user host navigation,
+transfer/explore/follow/regroup/reload, reactions/chat/result, no acceptance
+browser console or page errors.
+
+Vite emits ECONNABORTED proxy warnings when test pages close their sockets;
+these are server-side shutdown warnings, not acceptance browser errors.
+
+Reviewed screenshot renders after layout changes. No physical device/OS share
+sheet, mobile keyboard, deployment, or new load test. Mobbin reference query
+refused because paid plan required; no external design evidence fabricated.
+
+VERDICT: PASS

@@ -1,0 +1,36 @@
+November 3, 2026 — product help/comments/tag fix
+
+Backend: npm run test --prefix backend -- --maxWorkers=2
+  20 files /236 passed /30.74s
+Frontend: npm run test:frontend
+  10 files /47 passed /8.33s after final helper logic
+Lint: clean
+Build:107 modules, CSS110.52kB gzip19.50kB; JS403.70kB gzip124.14kB
+Smoke: PASS identity/rooms/guests/votes/comments/chat/party/transfer/results
+Full Chromium suite:14 passed /2.1m
+Affected Chromium rerun after final helper/placeholder refinement:
+  live-party.spec.js and tab-room-fixes.spec.js:2 passed /1.1m
+Final action-alignment visual rerun: see final gate below.
+Design detector:[]; git diff --check clean
+
+Checks include 4-user price questions/comparison, unknown data/offline/unit
+paths, optional quick-choice wizard, More action visibility, separate
+live/persisted product comments and all previous party/invite/save/vote flows.
+Live chat tested untagged, explicitly tagged, cleared back to no tag, across
+users and after reload. Backend also asserts persisted null when productId
+is omitted, even with an active party/current product. Acceptance asserts
+no browser console or page errors.
+
+First backend run crashed before reporting results (-1073740791). Sequential
+rerun with two workers passed; no source workaround or skipped tests.
+Vite proxy ECONNABORTED warnings during browser disconnect are server-side
+shutdown warnings; acceptance browser error collection remains empty.
+
+Rendered desktop/mobile component captures inspected. Cropped product-tools
+screens hide surrounding sticky navigation during capture only. No physical
+phone, deployment/load or new production security certification. Existing chat
+history preserved because old intentional/automatic tags cannot be distinguished.
+
+Final compact action alignment gate: live-party.spec.js 1 passed /26.7s.
+Final desktop/mobile target renders inspected after this gate.
+VERDICT: PASS

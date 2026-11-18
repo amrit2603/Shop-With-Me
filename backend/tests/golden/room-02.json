@@ -1,0 +1,40 @@
+{
+  "id": "room-02",
+  "title": "Score tie broken by Love votes (A: 1 Love = 3 pts vs B: 1 Like + 1 Need more info = 3 pts)",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Velvet Blazer"
+    },
+    {
+      "id": "p2",
+      "name": "Wool Coat"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love"
+    },
+    "p2": {
+      "u2": "Like",
+      "u3": "Need more info"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Stunning luxury"
+      }
+    ],
+    "p2": [
+      {
+        "text": "A bit heavy"
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1",
+    "tieBreakReason": "Love votes"
+  }
+}

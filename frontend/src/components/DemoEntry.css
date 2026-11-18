@@ -1,0 +1,81 @@
+.demo-entry {
+  min-height: 70vh;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--gap-11);
+  align-items: center;
+  padding: var(--inset-60);
+  max-width: 1100px;
+  margin: auto;
+}
+.demo-entry h1 {
+  font-size: var(--type-size-35);
+  line-height: var(--leading-4);
+  letter-spacing: var(--tracking-5);
+  margin-bottom: var(--outset-18);
+}
+.demo-entry h2 {
+  font-size: var(--type-size-8);
+  margin-bottom: var(--outset-7);
+}
+.demo-entry p {
+  color: var(--text-muted);
+  line-height: var(--leading-11);
+  max-width: 48ch;
+}
+.demo-entry-forms {
+  display: grid;
+  gap: var(--gap-12);
+}
+.demo-entry form {
+  display: grid;
+  gap: var(--gap-8);
+}
+.demo-entry label {
+  display: grid;
+  gap: var(--gap-2);
+}
+.demo-entry input {
+  font: inherit;
+  padding: var(--inset-24);
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--round-1);
+  min-width: 0;
+}
+.demo-join-button {
+  font: inherit;
+  background: transparent;
+  color: var(--text);
+  padding: var(--inset-4);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--round-1);
+  cursor: pointer;
+}
+.demo-entry input:focus-visible,
+.demo-join-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.demo-entry form + form {
+  border-top: 1px solid var(--border);
+  padding-top: var(--inset-30);
+}
+.demo-entry ::selection {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+@media (max-width: 700px) {
+  .demo-entry {
+    grid-template-columns: 1fr;
+    gap: var(--gap-13);
+    padding: var(--inset-61);
+  }
+  .demo-entry h1 {
+    font-size: var(--type-size-36);
+  }
+  .demo-entry-forms {
+    gap: var(--gap-14);
+  }
+}

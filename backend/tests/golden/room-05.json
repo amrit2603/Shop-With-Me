@@ -1,0 +1,23 @@
+{
+  "id": "room-05",
+  "title": "Zero votes cast across items",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Lamp"
+    },
+    {
+      "id": "p2",
+      "name": "Rug"
+    }
+  ],
+  "votes": {
+    "p1": {},
+    "p2": {}
+  },
+  "comments": {},
+  "expected": {
+    "status": "insufficient_data",
+    "winnerId": null
+  }
+}

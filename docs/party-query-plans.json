@@ -1,0 +1,57 @@
+[
+  {
+    "sql": "SELECT * FROM party_state WHERE room_id=?",
+    "plan": [
+      {
+        "id": 3,
+        "parent": 0,
+        "notused": 39,
+        "detail": "SEARCH party_state USING INDEX sqlite_autoindex_party_state_1 (room_id=?)"
+      }
+    ]
+  },
+  {
+    "sql": "SELECT id FROM party_events WHERE room_id=? ORDER BY id DESC LIMIT 50",
+    "plan": [
+      {
+        "id": 4,
+        "parent": 0,
+        "notused": 54,
+        "detail": "SEARCH party_events USING COVERING INDEX party_events_room_time (room_id=?)"
+      }
+    ]
+  },
+  {
+    "sql": "SELECT * FROM room_products WHERE room_id=? AND product_id=?",
+    "plan": [
+      {
+        "id": 3,
+        "parent": 0,
+        "notused": 39,
+        "detail": "SEARCH room_products USING INDEX sqlite_autoindex_room_products_1 (room_id=? AND product_id=?)"
+      }
+    ]
+  },
+  {
+    "sql": "SELECT * FROM votes WHERE room_id=? AND product_id=?",
+    "plan": [
+      {
+        "id": 3,
+        "parent": 0,
+        "notused": 61,
+        "detail": "SEARCH votes USING INDEX idx_votes_room_product (room_id=? AND product_id=?)"
+      }
+    ]
+  },
+  {
+    "sql": "SELECT * FROM party_results WHERE share_id=?",
+    "plan": [
+      {
+        "id": 3,
+        "parent": 0,
+        "notused": 39,
+        "detail": "SEARCH party_results USING INDEX sqlite_autoindex_party_results_1 (share_id=?)"
+      }
+    ]
+  }
+]

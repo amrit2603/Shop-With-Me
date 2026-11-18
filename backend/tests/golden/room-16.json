@@ -1,0 +1,46 @@
+{
+  "id": "room-16",
+  "title": "Clear winner with 5 participants",
+  "items": [
+    {
+      "id": "p1",
+      "name": "A"
+    },
+    {
+      "id": "p2",
+      "name": "B"
+    },
+    {
+      "id": "p3",
+      "name": "C"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love",
+      "u2": "Love",
+      "u3": "Love",
+      "u4": "Like",
+      "u5": "Love"
+    },
+    "p2": {
+      "u1": "No",
+      "u2": "No",
+      "u3": "Like"
+    },
+    "p3": {
+      "u1": "Need more info"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Clear winner for all of us!"
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1"
+  }
+}

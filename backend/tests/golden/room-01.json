@@ -1,0 +1,42 @@
+{
+  "id": "room-01",
+  "title": "Unanimous Love for Product A",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Silk Dress"
+    },
+    {
+      "id": "p2",
+      "name": "Cotton Shirt"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love",
+      "u2": "Love",
+      "u3": "Love"
+    },
+    "p2": {
+      "u1": "No",
+      "u2": "No"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Absolute perfection!"
+      }
+    ],
+    "p2": [
+      {
+        "text": "Too casual"
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1",
+    "feedbackCategory": "positive"
+  }
+}

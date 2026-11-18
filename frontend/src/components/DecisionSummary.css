@@ -1,0 +1,305 @@
+.decision-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.decision-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.btn-toggle-formula {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  padding: var(--inset-57);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--type-weight-2);
+  cursor: pointer;
+}
+
+.scoring-formula-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.scoring-formula-card h4 {
+  font-size: var(--text-sm);
+  font-weight: var(--type-weight-1);
+  margin-bottom: var(--space-2);
+}
+
+.formula-rules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: var(--space-1);
+  margin-bottom: var(--space-2);
+}
+
+.formula-rule-item {
+  display: flex;
+  justify-content: space-between;
+  background: var(--surface-raised);
+  padding: var(--inset-57);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+}
+
+.formula-tiebreakers {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  border-top: 1px dashed var(--border-subtle);
+  padding-top: var(--space-2);
+}
+
+.formula-tiebreakers ol {
+  padding-left: var(--space-3);
+  margin-top: var(--space-1);
+}
+
+.decision-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-sm);
+}
+
+.decision-card--empty, .decision-card--no-votes {
+  text-align: center;
+  padding: var(--space-4);
+  color: var(--text-muted);
+}
+
+.decision-card--final-choice {
+  border: 2px solid var(--status-green);
+}
+
+.final-choice-badge {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: var(--type-weight-1);
+  color: var(--status-green);
+  background: var(--status-green-bg);
+  padding: var(--inset-58);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-2);
+}
+
+.decision-card--winner {
+  border: 2px solid var(--accent);
+}
+
+.winner-badge {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: var(--type-weight-1);
+  color: var(--accent);
+  background: var(--accent-subtle);
+  padding: var(--inset-58);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-2);
+}
+
+.winner-grid {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.winner-media {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.winner-details {
+  flex: 1;
+}
+
+.winner-category {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.winner-title {
+  font-size: var(--text-base);
+  font-weight: var(--type-weight-1);
+  color: var(--text);
+}
+
+.winner-price {
+  font-size: var(--text-sm);
+  font-weight: var(--type-weight-1);
+  color: var(--accent);
+}
+
+.winner-sentence, .final-choice-sentence {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  font-style: italic;
+  margin: var(--outset-40);
+}
+
+.winner-score-pill {
+  font-size: var(--text-sm);
+  font-weight: var(--type-weight-2);
+  color: var(--text);
+  margin-bottom: var(--space-1);
+}
+
+.winner-vote-tags {
+  display: flex;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+  margin-top: var(--space-1);
+}
+
+.vote-tag {
+  font-size: var(--type-size-29);
+  padding: var(--inset-59);
+  border-radius: var(--radius-sm);
+  background: var(--surface-raised);
+}
+
+.winner-tiebreak-note {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+  padding: var(--inset-57);
+  background: var(--status-amber-bg);
+  color: var(--status-amber);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+}
+
+.decision-card--tie {
+  border: 2px solid var(--status-amber);
+}
+
+.tie-badge {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: var(--type-weight-1);
+  color: var(--status-amber);
+  background: var(--status-amber-bg);
+  padding: var(--inset-58);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-1);
+}
+
+.tied-products-row {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-top: var(--space-2);
+}
+
+.tied-product-chip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--inset-57);
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.tied-chip-media {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.decision-leaderboard-section {
+  margin-top: var(--space-3);
+}
+
+.leaderboard-heading {
+  font-size: var(--text-base);
+  font-weight: var(--type-weight-1);
+  margin-bottom: var(--space-2);
+}
+
+.leaderboard-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.leaderboard-card {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  align-items: center;
+}
+
+.leaderboard-rank-badge {
+  font-size: var(--text-base);
+  font-weight: var(--type-weight-1);
+  color: var(--text-muted);
+  min-width: 28px;
+}
+
+.leaderboard-media {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.leaderboard-info {
+  flex: 1;
+}
+
+.leaderboard-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.leaderboard-product-name {
+  font-size: var(--text-sm);
+  font-weight: var(--type-weight-1);
+  color: var(--text);
+}
+
+.leaderboard-price {
+  font-size: var(--text-sm);
+  color: var(--accent);
+  font-weight: var(--type-weight-2);
+}
+
+.leaderboard-stats-row {
+  display: flex;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.leaderboard-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.btn-inspect-comments {
+  font-size: var(--text-sm);
+  color: var(--accent);
+}

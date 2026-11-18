@@ -1,0 +1,38 @@
+{
+  "id": "room-09",
+  "title": "Three-way authentic tie (1 Love each)",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Hat"
+    },
+    {
+      "id": "p2",
+      "name": "Scarf"
+    },
+    {
+      "id": "p3",
+      "name": "Gloves"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love"
+    },
+    "p2": {
+      "u2": "Love"
+    },
+    "p3": {
+      "u3": "Love"
+    }
+  },
+  "comments": {},
+  "expected": {
+    "status": "tie",
+    "tiedProductIds": [
+      "p1",
+      "p2",
+      "p3"
+    ]
+  }
+}

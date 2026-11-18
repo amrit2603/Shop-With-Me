@@ -1,0 +1,40 @@
+.copy-link {
+  display: flex;
+  gap: 0;
+  border-radius: var(--round-2);
+  overflow: hidden;
+  border: 1px solid var(--wash-255-255-255-0-12);
+  background: var(--wash-255-255-255-0-05);
+}
+
+.copy-link-input {
+  flex: 1;
+  padding: var(--inset-19);
+  font-size: var(--type-size-34);
+  font-family: var(--typeface-1);
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  outline: none;
+  min-width: 0;
+}
+
+.copy-link-btn {
+  padding: var(--inset-15);
+  font-size: var(--type-size-34);
+  font-weight: var(--type-weight-2);
+  color: var(--text);
+  background: linear-gradient(135deg, var(--purple-accent), var(--purple-accent));
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.copy-link-btn:hover {
+  background: linear-gradient(135deg, var(--purple-accent), var(--purple-accent));
+}
+
+.copy-link-btn--copied {
+  background: linear-gradient(135deg, var(--status-green), var(--status-green)) !important;
+}

@@ -1,0 +1,43 @@
+November 3, 2026 — landing/share restoration verification
+
+npm run test:frontend
+ Test Files  8 passed (8)
+      Tests  42 passed (42)
+   Duration  9.86s (environment 63%, tests 15%, setup 14%, import 4%, transform 4%, worker 1%)
+
+npm run test:backend
+ Test Files  20 passed (20)
+      Tests  233 passed (233)
+   Duration  35.73s (import 70%, tests 28%, worker 1%)
+
+npm run test:e2e
+  14 passed (1.5m)
+
+npm run smoke
+SMOKE PASS: demo entry, synchronized party, reaction, host comparison/transfer, end/public result; register/login/logout/me and authenticated creation; room, 2 guests, 2 votes, 2 comments, live chat, reconnect history, summary, and final choice
+
+npm run lint --prefix frontend
+> oxlint
+Exit 0, no warnings (observed tool output).
+
+npm run build
+107 modules transformed
+CSS104.12 kB (18.45 gzip), JS398.45 kB (122.73 gzip)
+Built in408ms (observed tool output).
+
+npm audit --omit=dev --prefix backend
+{"info": 0, "low": 0, "moderate": 0, "high": 0, "critical": 0, "total": 0}
+
+npm audit --omit=dev --prefix frontend
+{"info": 0, "low": 0, "moderate": 0, "high": 0, "critical": 0, "total": 0}
+
+Impeccable detect --json frontend/src
+[]
+
+Occupied-port Windows launcher self-check against owned test server
+Expected and observed exit1; explicit already-running message; no build/old-browser reuse. PASS
+
+Browser assertion: clipboard seeded with impeccable then code clicked; readback equals actual six-character room code. PASS
+Native Share payload URL and actual link-copy fallback: PASS.
+Real OS share sheet not exercised on physical hardware.
+VERDICT: PASS

@@ -1,0 +1,3 @@
+# Simple shared shopping room
+Latest user brief removes shopping-party navigation, following/host selection, product comments and image downloads from the app. Keep independent products, product help, private saves/share, chat and votes. Retain legacy backend APIs/data for compatibility; do not delete persisted comments/party history. Product help reuses the catalog service through a room-scoped participant-authorized endpoint. No new dependencies. Policy: compact planning, dependency context, impact verification, no delegation.
+Browser contracts for removed party/comment screens are retired in a separate test migration; independent identity, sharing, saves, voting, chat, uploads and final-decision scenarios remain.

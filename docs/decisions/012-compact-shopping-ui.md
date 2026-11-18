@@ -1,0 +1,2 @@
+# Compact shopping UI
+Default to a name-only live party and a single shortlist form. Do not ask users to choose interaction modes before shopping. Use native disclosures for optional controls, comments, product help and room settings; keep product/reactions/chat in the main path. Product help and the human party leader have distinct labels. Preserve backend permissions and shared state, existing product sources and private saving. See COMPACT_UI_REPORT.md for reference evidence/access limits and verification.

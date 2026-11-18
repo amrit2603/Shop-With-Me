@@ -1,0 +1,26 @@
+{
+  "id": "room-14",
+  "title": "Single participant room with Love vote",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Watch"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "I really love this one."
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1"
+  }
+}

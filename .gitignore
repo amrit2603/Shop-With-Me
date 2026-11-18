@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build output
+frontend/dist/
+dist/
+
+# SQLite databases
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+backend/data/
+/data/
+
+# Uploads
+backend/uploads/
+uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+# Packages
+*.zip
+
+# Test and coverage artifacts
+coverage/
+backend/coverage/
+test-results/
+playwright-report/
+p4-baseline-copy/
+
+
+backend/backups/
+.superdesign/tmp/
+
+# Local design-agent tooling and consent/cache state
+.agents/
+.codex/
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+.impeccable/live/
+
+**/.impeccable/config.local.json
+**/.impeccable/hook.cache.json
+**/.impeccable/live/

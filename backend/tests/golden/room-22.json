@@ -1,0 +1,34 @@
+{
+  "id": "room-22",
+  "title": "Room with profanity masked comments preserving valid consensus",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Sofa"
+    },
+    {
+      "id": "p2",
+      "name": "Futon"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love",
+      "u2": "Like"
+    },
+    "p2": {
+      "u1": "No"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Really awesome design and comfy"
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1"
+  }
+}

@@ -1,0 +1,17 @@
+.product-actions { display:flex; flex-wrap:wrap; gap: var(--gap-2); padding: var(--inset-74); border-top:1px solid var(--border); }
+.product-actions button,.product-actions a { color:var(--text-muted); font:inherit; font-size: var(--type-size-41); border:1px solid var(--border); border-radius: var(--round-1); background:var(--surface); padding: var(--inset-40); text-decoration:none; cursor:pointer; }
+.product-actions button[aria-pressed=true] { color:var(--accent); border-color:var(--accent); }
+.product-action-status { width:100%; font-size: var(--type-size-41); color:var(--text-muted); }
+.product-action-status:empty { display:none; }
+.saved-page { max-width:1000px; margin: var(--outset-46); padding: var(--inset-17); width:100%; }
+.saved-page h1 { font-size: var(--type-size-42); margin-bottom: var(--outset-2); }
+.saved-page > p { color:var(--text-muted); margin-bottom: var(--outset-17); }
+.saved-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap: var(--gap-6); margin-top: var(--outset-18); }
+.saved-card { border:1px solid var(--border); border-radius: var(--round-11); background:var(--surface); overflow:hidden; }
+.saved-card > img { width:100%; height:220px; object-fit:contain; background:var(--surface-raised); }
+.saved-card > h2,.saved-card > p { padding: var(--inset-75); font-size: var(--type-size-12); }
+.deadline-select { display:flex; align-items:center; flex-wrap:wrap; gap: var(--gap-8); margin: var(--outset-27); color:var(--text-muted); }
+.deadline-select select { font:inherit; color:var(--text); background:var(--surface); border:1px solid var(--border); border-radius: var(--round-1); padding: var(--inset-3); }
+.room-action-message { min-height:24px; font-size: var(--type-size-32); color:var(--accent); margin: var(--outset-9); }
+.whatsapp-share { display:inline-flex; margin-bottom: var(--outset-7); text-decoration:none; }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; } }

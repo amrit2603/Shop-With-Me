@@ -1,0 +1,36 @@
+VYUMI LIVE SHOPPING PARTY - WINDOWS
+
+1. Use Node.js 24 LTS with npm.
+2. Extract the entire ZIP into a NEW folder. Do not run inside the ZIP.
+3. Stop an older VYUMI terminal with Ctrl+C before using this copy.
+4. Double-click Start-Vyumi.cmd. Wait for dependency installation and the build.
+5. Keep the terminal open and visit http://localhost:3001.
+6. Enter only your name and click Enter demo. No email, password or signup.
+7. Name the room, shortlist at least two products, then click Start Shopping Party.
+8. You enter the live room directly. Click the room code to copy it and open
+   the invitation card. Share sends the invite link; Copy link is also available.
+9. Open the invite link in another tab, or paste its code/link in Already invited.
+   Your invitation stays visible; enter a different guest name and click Join Room.
+10. The host chooses Previous/Next product; everyone follows automatically.
+    Manage party contains the optional explore/follow/transfer controls.
+    Demo reactions, chat, suggestions,
+    three-question product help, control transfer, End party and the public result.
+
+Alternative commands from the extracted project root:
+  npm run setup
+  npm run build
+  npm start
+
+Stop with Ctrl+C. A localhost link works only on this computer. Other devices
+need a reachable address and a configured frontend origin; off-network friends
+need hosted deployment.
+
+If the launcher says port 3001 already has VYUMI, stop the older terminal
+with Ctrl+C and run the launcher again. It will not open that older copy.
+
+If a signup form appears, an older VYUMI copy is still running. Stop its terminal
+and start this copy. Keep any startup error visible and copy the exact message.
+
+This is a single-instance SQLite prototype. VYUMI Host uses stored catalog facts
+and deterministic rules, not a general-purpose language model. Verification and
+limits are documented in docs/LIVE_PARTY_REPORT.md.

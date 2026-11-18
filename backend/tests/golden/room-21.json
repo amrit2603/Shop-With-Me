@@ -1,0 +1,28 @@
+{
+  "id": "room-21",
+  "title": "Mixed feedback with highlights and questions",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Table"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love",
+      "u2": "Need more info"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Love the solid oak finish! Does it require assembly?"
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1",
+    "feedbackCategory": "mixed"
+  }
+}

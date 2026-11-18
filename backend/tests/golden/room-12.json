@@ -1,0 +1,28 @@
+{
+  "id": "room-12",
+  "title": "High question feedback category",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Jacket"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Need more info",
+      "u2": "Like"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Does this fit true to size? Is it waterproof?"
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1",
+    "feedbackCategory": "questions"
+  }
+}

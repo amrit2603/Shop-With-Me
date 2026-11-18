@@ -1,0 +1,132 @@
+.product-discussion-container {
+  margin-top: var(--space-2);
+}
+
+.discussion-header {
+  margin-bottom: var(--space-1);
+}
+
+.discussion-title {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: var(--type-weight-2);
+  color: var(--text-muted);
+}
+
+.discussion-title:hover {
+  color: var(--text);
+}
+
+.discussion-form {
+  margin-bottom: var(--space-2);
+}
+
+.discussion-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2);
+}
+
+.discussion-input-wrapper:focus-within {
+  border-color: var(--accent);
+}
+
+.discussion-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: var(--text-sm);
+  outline: none;
+  resize: vertical;
+  min-height: 48px;
+}
+
+.discussion-input::placeholder {
+  color: var(--text-subtle);
+}
+
+.btn-send-thought {
+  align-self: flex-end;
+  background: var(--accent);
+  color: var(--accent-fg);
+  padding: var(--inset-44);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: var(--type-weight-2);
+  min-height: 32px;
+}
+
+.btn-send-thought:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.comment-counter {
+  font-size: var(--type-size-29);
+  color: var(--text-subtle);
+  display: block;
+  text-align: right;
+  margin-top: var(--outset-37);
+}
+
+.discussion-error {
+  color: var(--status-red);
+  font-size: var(--text-sm);
+  margin-top: var(--space-1);
+}
+
+.discussion-comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: var(--space-2);
+}
+
+.discussion-comment-item {
+  background: var(--surface-raised);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2);
+  border: 1px solid var(--border-subtle);
+}
+
+.comment-user-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--outset-37);
+}
+
+.comment-username {
+  font-size: var(--text-sm);
+  font-weight: var(--type-weight-2);
+  color: var(--accent);
+}
+
+.comment-time {
+  font-size: var(--type-size-29);
+  color: var(--text-subtle);
+}
+
+.comment-message {
+  font-size: var(--text-sm);
+  color: var(--text);
+  line-height: var(--leading-2);
+  word-break: break-word;
+}
+
+.discussion-empty {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  font-style: italic;
+  padding: var(--inset-76);
+}

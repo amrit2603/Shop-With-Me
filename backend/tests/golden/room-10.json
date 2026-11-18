@@ -1,0 +1,38 @@
+{
+  "id": "room-10",
+  "title": "Three-way tie broken by Love votes (A: 1 Love = 3 pts vs B: 1 Like + 1 Need = 3 pts vs C: 3 Need = 3 pts)",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Cup"
+    },
+    {
+      "id": "p2",
+      "name": "Plate"
+    },
+    {
+      "id": "p3",
+      "name": "Bowl"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love"
+    },
+    "p2": {
+      "u1": "Like",
+      "u2": "Need more info"
+    },
+    "p3": {
+      "u1": "Need more info",
+      "u2": "Need more info",
+      "u3": "Need more info"
+    }
+  },
+  "comments": {},
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1",
+    "tieBreakReason": "Love votes"
+  }
+}

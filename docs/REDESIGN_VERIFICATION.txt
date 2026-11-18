@@ -1,0 +1,40 @@
+npm run test:frontend
+ Test Files  4 passed (4)
+      Tests  34 passed (34)
+   Duration  6.47s (environment 72%, tests 13%, setup 11%, import 3%, transform 1%, worker 1%)
+
+npm run test:backend
+ Test Files  19 passed (19)
+      Tests  230 passed (230)
+   Duration  35.26s (import 68%, tests 30%, worker 1%)
+
+npm run test:e2e
+  13 passed (1.7m)
+
+npm run smoke
+SMOKE PASS: demo entry, synchronized party, reaction, host comparison/transfer, end/public result; register/login/logout/me and authenticated creation; room, 2 guests, 2 votes, 2 comments, live chat, reconnect history, summary, and final choice
+
+node scripts/capture-redesign.cjs after
+CAPTURE PASS after 16 surfaces x 2 capture widths + 320px overflow checks, plus PNG export
+
+Impeccable detect --json frontend/src backend/src/routes/parties.js
+[]
+
+npm run lint --prefix frontend
+> oxlint
+Exit 0 (observed tool output)
+
+npm run build
+106 modules transformed
+dist/assets/index-DliOSmxj.css 103.38 kB | gzip 18.30 kB
+dist/assets/index-CgKQwDQ5.js 414.78 kB | gzip 129.24 kB
+Built in 618ms (observed tool output)
+
+Literal search:
+rg -n -i "#ccff00|#b3e600|rgba\(204,\s*255,\s*0|#a855f7|#84cc16" frontend/src backend/src/routes/parties.js
+No matches.
+rg -n "#[0-9a-fA-F]{3,8}\b|rgba?\(" frontend/src --glob "*.css" --glob "!theme.css"
+No matches.
+
+Scope note: token-pair contrast, Chromium viewport checks and independent visual review do not establish a full accessibility/hardware/deployment certification. Scan preceded the two reviewer-directed CSS fixes.
+VERDICT: PASS

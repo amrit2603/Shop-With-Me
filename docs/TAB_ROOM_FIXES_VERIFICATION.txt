@@ -1,0 +1,36 @@
+November 3, 2026 — current tab/room fix evidence.
+
+npm run test:frontend
+ Test Files  7 passed (7)
+      Tests  39 passed (39)
+   Duration  4.14s (environment 71%, setup 13%, tests 10%, import 3%, transform 2%, worker 1%)
+
+npm run test:e2e
+  14 passed (1.4m)
+
+npm run smoke
+SMOKE PASS: demo entry, synchronized party, reaction, host comparison/transfer, end/public result; register/login/logout/me and authenticated creation; room, 2 guests, 2 votes, 2 comments, live chat, reconnect history, summary, and final choice
+
+npm run test:backend (last sequential run, observed direct tool output)
+Test Files 20 passed (20)
+Tests 233 passed (233)
+Duration 22.04s
+Exit 0. Includes explicit matching/unrelated room-leave regression.
+
+npm run lint --prefix frontend
+> oxlint
+Exit 0, no warnings (observed tool output).
+
+npm run build
+107 modules transformed
+CSS 104.58 kB (18.54 gzip), JS 397.99 kB (122.60 gzip)
+Build passed in279ms (observed tool output).
+
+Impeccable detect --json frontend/src
+[]
+Mechanical scan checkpoint; later save-indicator logic was tested without a new visual layout change.
+
+No browser console/page errors: acceptance scenario recorded and asserted [].
+All11acceptance checks: PASS within the exercised Chromium flows.
+No deployment, new load benchmark or real-device/cross-browser certification claimed.
+VERDICT: PASS

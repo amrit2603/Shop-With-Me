@@ -1,0 +1,33 @@
+{
+  "id": "room-15",
+  "title": "Tie with identical score and Love votes broken by total vote count (A: 3 Like = 6 pts, 3 votes vs B: 2 Like + 2 Need = 6 pts, 4 votes)",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Item 1"
+    },
+    {
+      "id": "p2",
+      "name": "Item 2"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Like",
+      "u2": "Like",
+      "u3": "Like"
+    },
+    "p2": {
+      "u1": "Like",
+      "u2": "Like",
+      "u3": "Need more info",
+      "u4": "Need more info"
+    }
+  },
+  "comments": {},
+  "expected": {
+    "status": "winner",
+    "winnerId": "p2",
+    "tieBreakReason": "total votes"
+  }
+}

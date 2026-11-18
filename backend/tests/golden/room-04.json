@@ -1,0 +1,43 @@
+{
+  "id": "room-04",
+  "title": "Authentic 2-way unbreakable tie",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Sneakers"
+    },
+    {
+      "id": "p2",
+      "name": "Loafers"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love",
+      "u2": "Like"
+    },
+    "p2": {
+      "u3": "Love",
+      "u4": "Like"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Comfy"
+      }
+    ],
+    "p2": [
+      {
+        "text": "Classy"
+      }
+    ]
+  },
+  "expected": {
+    "status": "tie",
+    "tiedProductIds": [
+      "p1",
+      "p2"
+    ]
+  }
+}

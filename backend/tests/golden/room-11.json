@@ -1,0 +1,28 @@
+{
+  "id": "room-11",
+  "title": "High concern feedback category",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Headphones"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Like",
+      "u2": "No"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Too expensive and looks fragile. Bad battery."
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1",
+    "feedbackCategory": "concerns"
+  }
+}

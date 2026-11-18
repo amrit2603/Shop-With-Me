@@ -1,0 +1,43 @@
+{
+  "id": "room-06",
+  "title": "All No votes (0 points each)",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Stool"
+    },
+    {
+      "id": "p2",
+      "name": "Desk"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "No",
+      "u2": "No"
+    },
+    "p2": {
+      "u1": "No",
+      "u2": "No"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Poor quality"
+      }
+    ],
+    "p2": [
+      {
+        "text": "Overpriced"
+      }
+    ]
+  },
+  "expected": {
+    "status": "tie",
+    "tiedProductIds": [
+      "p1",
+      "p2"
+    ]
+  }
+}

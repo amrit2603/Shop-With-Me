@@ -1,0 +1,28 @@
+{
+  "id": "room-17",
+  "title": "Only Need more info votes cast",
+  "items": [
+    {
+      "id": "p1",
+      "name": "A"
+    },
+    {
+      "id": "p2",
+      "name": "B"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Need more info",
+      "u2": "Need more info"
+    },
+    "p2": {
+      "u1": "Need more info"
+    }
+  },
+  "comments": {},
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1"
+  }
+}

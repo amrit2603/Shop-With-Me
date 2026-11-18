@@ -1,0 +1,4 @@
+host permission: intentional break detected (test exit 1)
+host permission: original source restored byte-for-byte
+score arithmetic: intentional break detected (test exit 1)
+score arithmetic: original source restored byte-for-byte

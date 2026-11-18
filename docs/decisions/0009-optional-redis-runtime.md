@@ -1,0 +1,1 @@
+Add `redis`, `rate-limit-redis`, and `@socket.io/redis-adapter` as optional runtime integrations so clustered deployments can share rate limits and Socket.IO fan-out when `REDIS_URL` is configured; local single-node operation keeps in-memory defaults.

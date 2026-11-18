@@ -1,0 +1,12 @@
+.vyumi-home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 0%, var(--surface) 0%, var(--bg) 70%);
+}
+
+.home-main {
+  flex: 1;
+  padding: var(--inset-83);
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+{
+  "id": "room-13",
+  "title": "Positive highlights feedback category",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Leather Boots"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love",
+      "u2": "Love"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Great quality, beautiful color, super comfortable!"
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1",
+    "feedbackCategory": "highlights"
+  }
+}

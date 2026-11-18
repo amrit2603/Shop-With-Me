@@ -1,0 +1,37 @@
+{
+  "id": "room-07",
+  "title": "Volume likes outweigh fewer loves (A: 2 Love = 6 pts vs B: 4 Like = 8 pts)",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Earrings"
+    },
+    {
+      "id": "p2",
+      "name": "Necklace"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love",
+      "u2": "Love"
+    },
+    "p2": {
+      "u1": "Like",
+      "u2": "Like",
+      "u3": "Like",
+      "u4": "Like"
+    }
+  },
+  "comments": {
+    "p2": [
+      {
+        "text": "Everyone likes it!"
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p2"
+  }
+}

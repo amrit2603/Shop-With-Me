@@ -1,0 +1,36 @@
+{
+  "parties": 100,
+  "participants": 600,
+  "requestedDurationSeconds": 120,
+  "durationSeconds": 125.76,
+  "operations": 29077,
+  "errors": 1,
+  "navigationMs": {
+    "samples": 12845,
+    "p50": 533.61,
+    "p95": 1882.37,
+    "p99": 4962.92,
+    "max": 5786.28
+  },
+  "restMs": {
+    "samples": 2568,
+    "p50": 594.34,
+    "p95": 2027.13,
+    "p99": 3847.18,
+    "max": 6059.85
+  },
+  "server": {
+    "count": 2568,
+    "errors": 0,
+    "p50": 0.67,
+    "p95": 5.38,
+    "p99": 8.8,
+    "durationSeconds": 125.7653454,
+    "cpuUserMs": 85657,
+    "cpuSystemMs": 25281,
+    "rssMB": 402,
+    "heapMB": 35
+  },
+  "measuredAt": "2026-11-02T12:58:10.388Z",
+  "limits": "Single localhost Node/SQLite process; seeded identities; not an internet or multi-instance benchmark."
+}

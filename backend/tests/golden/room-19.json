@@ -1,0 +1,30 @@
+{
+  "id": "room-19",
+  "title": "Two products both have 1 Like, 0 Love, 1 vote -> Authentic tie",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Item X"
+    },
+    {
+      "id": "p2",
+      "name": "Item Y"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Like"
+    },
+    "p2": {
+      "u2": "Like"
+    }
+  },
+  "comments": {},
+  "expected": {
+    "status": "tie",
+    "tiedProductIds": [
+      "p1",
+      "p2"
+    ]
+  }
+}

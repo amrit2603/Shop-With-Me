@@ -1,0 +1,36 @@
+{
+  "id": "room-20",
+  "title": "Tie-break between 2 items with same score (3 pts each), where one has Love and one has only No and Like",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Chair"
+    },
+    {
+      "id": "p2",
+      "name": "Bench"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love"
+    },
+    "p2": {
+      "u1": "Like",
+      "u2": "Need more info",
+      "u3": "No"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Comfortable"
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1",
+    "tieBreakReason": "Love votes"
+  }
+}

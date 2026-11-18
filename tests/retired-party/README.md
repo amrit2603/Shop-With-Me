@@ -1,0 +1,1 @@
+Historical browser contracts for features explicitly removed November 4. Replaced by simple-room.spec.js plus existing identity, private-save, chat, vote and invitation tests. Backend compatibility tests remain active.

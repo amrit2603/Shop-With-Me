@@ -1,0 +1,37 @@
+{
+  "id": "room-03",
+  "title": "Score tie broken by Love votes (A: 1 Love + 1 Like = 5 pts, 2 votes vs B: 2 Like + 1 Need more info = 5 pts, 3 votes, 0 Love)",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Gold Watch"
+    },
+    {
+      "id": "p2",
+      "name": "Silver Ring"
+    }
+  ],
+  "votes": {
+    "p1": {
+      "u1": "Love",
+      "u2": "Like"
+    },
+    "p2": {
+      "u1": "Like",
+      "u2": "Like",
+      "u3": "Need more info"
+    }
+  },
+  "comments": {
+    "p1": [
+      {
+        "text": "Timeless piece"
+      }
+    ]
+  },
+  "expected": {
+    "status": "winner",
+    "winnerId": "p1",
+    "tieBreakReason": "Love votes"
+  }
+}
